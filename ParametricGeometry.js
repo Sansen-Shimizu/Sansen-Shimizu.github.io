@@ -3,11 +3,6 @@
  * based on the brilliant article by @prideout https://prideout.net/blog/old/blog/index.html@p=44.html
  */
 
-import {
-	BufferGeometry,
-	Float32BufferAttribute,
-	Vector3
-} from './three.module.js';
 
 class ParametricGeometry extends BufferGeometry {
 

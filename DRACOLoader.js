@@ -1,9 +1,4 @@
-import {
-	BufferAttribute,
-	BufferGeometry,
-	FileLoader,
-	Loader
-} from './three.module.js';
+
 
 const _taskCache = new WeakMap();
 
