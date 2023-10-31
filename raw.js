@@ -13,12 +13,14 @@
 
 			let scene, renderer, camera, stats;
 			let textureLoader;
-
+			0.147.0
 			/*/
 
 			import * as THREE from 'https://sansen-shimizu.github.io/three.module.js';
-			import * as THREE2 from 'https://sansen-shimizu.github.io/GLTFLoader.js';
-			import * as THREE3 from 'https://sansen-shimizu.github.io/DRACOLoader.js';
+			//import * as THREE2 from 'https://sansen-shimizu.github.io/GLTFLoader.js';
+			//import * as THREE3 from 'https://sansen-shimizu.github.io/DRACOLoader.js';
+			import * as THREE2 from 'https://cdn.skypack.dev/three@0.147.0/examples/jsm/loaders/GLTFLoader.js';
+			import * as THREE3 from 'https://cdn.skypack.dev/three@0.147.0/examples/jsm/loaders/DRACOLoader.js';
 			
 			//console.log("#okay");
 			import { GUI } from 'https://sansen-shimizu.github.io/dat.gui.module.js';
