@@ -627,10 +627,8 @@
 				// cloth geometry
 				clothGeometry = new THREE.ParametricGeometry( clothFunction, cloth.w, cloth.h );
 
-				var blackMaterial = new THREE.MeshBasicMaterial({ color: 0x000000 });
-
 				// cloth mesh
-				object = new THREE.Mesh( clothGeometry, blackMaterial );
+				object = new THREE.Mesh( clothGeometry, clothMaterial );
 				object.position.set( 0, 0, 0 );
 				object.castShadow = true;
 				scene.add( object );
@@ -638,7 +636,7 @@
 				// cloth geometry
 				clothGeometry2 = new THREE.ParametricGeometry( clothFunction, cloth.w, cloth.h );
 
-				object = new THREE.Mesh( clothGeometry2, blackMaterial );
+				object = new THREE.Mesh( clothGeometry2, clothMaterial );
 				object.position.set( 0, 0, 0 );
 				object.castShadow = true;
 				scene.add( object );
