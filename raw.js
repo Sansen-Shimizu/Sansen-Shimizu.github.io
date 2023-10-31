@@ -669,12 +669,12 @@
 							object.castShadow = true;
 							console.log(object);
 							const material = new THREE.MeshStandardMaterial({
-						        	color: 0xffffff, // Set the color to white
-						                roughness: 0.75, // Adjust these properties as needed
+						        	color: 0x000000,
+						                roughness: 0.75,
 						                metalness: 0.5,
 						        });
 						
-						        object.material = material;
+						        //object.material = material;
 						}
 					} );
 					skeleton = new THREE.SkeletonHelper( model );
