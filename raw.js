@@ -666,6 +666,9 @@
 
 					model.traverse( function ( object ) {
 						if ( object.isMesh ) object.castShadow = true;
+						if (!child.material.map && !child.material.color) {
+							child.material.color.setHex(0x000000);
+						}
 					} );
 					skeleton = new THREE.SkeletonHelper( model );
 					skeleton.visible = false;
