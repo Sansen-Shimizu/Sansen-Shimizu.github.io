@@ -665,7 +665,17 @@
 					scene.add( model );
 
 					model.traverse( function ( object ) {
-						if ( object.isMesh ) object.castShadow = true;
+						if ( object.isMesh ){ 
+							object.castShadow = true;
+							console.log(object);
+							const material = new THREE.MeshStandardMaterial({
+						        	color: 0xffffff, // Set the color to white
+						                roughness: 0.75, // Adjust these properties as needed
+						                metalness: 0.5,
+						        });
+						
+						        object.material = material;
+						}
 					} );
 					skeleton = new THREE.SkeletonHelper( model );
 					skeleton.visible = false;
