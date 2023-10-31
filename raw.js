@@ -808,8 +808,8 @@
 				renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true } );
 				renderer.setSize( container.clientWidth, container.clientHeight );
 				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.outputEncoding = THREE.sRGBEncoding;
-				renderer.shadowMap.enabled = true;
+				//renderer.outputEncoding = THREE.sRGBEncoding;
+				//renderer.shadowMap.enabled = true;
 				//renderer.setClearColor(0x0000000,0);
 				container.appendChild( renderer.domElement );
 
