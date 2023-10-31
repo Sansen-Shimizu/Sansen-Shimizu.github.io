@@ -810,7 +810,8 @@
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.outputEncoding = THREE.sRGBEncoding;
 				renderer.shadowMap.enabled = true;
-				renderer.setClearColor(0x0000000,0);
+				renderer.setClearColor(0x0000000);
+				//renderer.setClearColor(0x0000000,0);
 				container.appendChild( renderer.domElement );
 
 				RPSbutton =  document.getElementById("RPS1");
