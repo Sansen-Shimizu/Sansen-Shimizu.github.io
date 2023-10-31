@@ -593,7 +593,7 @@
 
 				const hemiLight = new THREE.HemisphereLight( 0xffffff, 0xedae49 );
 				hemiLight.position.set( 0, 20, 0 );
-				scene.add( hemiLight );
+				//scene.add( hemiLight );
 
 				const dirLight = new THREE.DirectionalLight( 0xffffff );
 				dirLight.position.set( 30, 10, 30 );
@@ -604,7 +604,7 @@
 				dirLight.shadow.camera.right = 2;
 				dirLight.shadow.camera.near = 0.1;
 				dirLight.shadow.camera.far = 40;
-				scene.add( dirLight );
+				//scene.add( dirLight );
 
 				// scene.add( new THREE.CameraHelper( dirLight.shadow.camera ) );
 					/*/ floor
