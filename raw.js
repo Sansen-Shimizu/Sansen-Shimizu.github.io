@@ -17,6 +17,7 @@
 			/*/
 
 			import * as THREE from 'https://sansen-shimizu.github.io/three.module.js';
+			import * as THREE2 from 'https://sansen-shimizu.github.io/GLTFLoader.js';
 			
 			//console.log("#okay");
 			import { GUI } from 'https://sansen-shimizu.github.io/dat.gui.module.js';
@@ -649,7 +650,7 @@
 				//====================================================================================================================================
 				//====================================================================================================================================
 				// SANSEN CHAN
-				const gltfLoader = new THREE.GLTFLoader();
+				const gltfLoader = new THREE2.GLTFLoader();
 				const dracoLoader = new THREE.DRACOLoader();
 				dracoLoader.setDecoderPath( 'https://cdn.jsdelivr.net/npm/three@0.133.1/examples/js/libs/draco/' );
 				//https://cdn.jsdelivr.net/npm/three@0.133.1/examples/js/libs/draco/draco_decoder.js
