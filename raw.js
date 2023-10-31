@@ -657,7 +657,7 @@
 				//https://cdn.jsdelivr.net/npm/three@0.133.1/examples/js/libs/draco/draco_decoder.js
 				gltfLoader.setDRACOLoader( dracoLoader );
 				
-				gltfLoader.load( 'https://uploads-ssl.webflow.com/6152c4ba477fccf758106a16/616cc4e737a2ff660e32dfb9_sansenchanNLAfixed.glb.txt', function ( gltf ) {
+				gltfLoader.load( 'https://uploads-ssl.webflow.com/6152c4ba477fccf758106a16/616cc4e737a2ff660e32dfb9_sansenchanNLA.glb.txt', function ( gltf ) {
 					if(backupImage != null)
 						backupImage.style.display = "none";
 
