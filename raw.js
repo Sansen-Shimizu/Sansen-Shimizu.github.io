@@ -653,7 +653,7 @@
 				// SANSEN CHAN
 				const gltfLoader = new THREE2.GLTFLoader();
 				const dracoLoader = new THREE3.DRACOLoader();
-				dracoLoader.setDecoderPath( 'https://cdn.jsdelivr.net/npm/three@0.133.1/examples/js/libs/draco/' );
+				dracoLoader.setDecoderPath( 'https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/libs/draco/' );
 				//https://cdn.jsdelivr.net/npm/three@0.133.1/examples/js/libs/draco/draco_decoder.js
 				gltfLoader.setDRACOLoader( dracoLoader );
 				
