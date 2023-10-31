@@ -593,7 +593,7 @@
 
 				const hemiLight = new THREE.HemisphereLight( 0xffffff, 0xedae49 );
 				hemiLight.position.set( 0, 20, 0 );
-				//scene.add( hemiLight );
+				scene.add( hemiLight );
 
 				const dirLight = new THREE.DirectionalLight( 0xffffff );
 				dirLight.position.set( 30, 10, 30 );
@@ -604,7 +604,7 @@
 				dirLight.shadow.camera.right = 2;
 				dirLight.shadow.camera.near = 0.1;
 				dirLight.shadow.camera.far = 40;
-				//scene.add( dirLight );
+				scene.add( dirLight );
 
 				// scene.add( new THREE.CameraHelper( dirLight.shadow.camera ) );
 					/*/ floor
@@ -808,9 +808,9 @@
 				renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true } );
 				renderer.setSize( container.clientWidth, container.clientHeight );
 				renderer.setPixelRatio( window.devicePixelRatio );
-				//renderer.outputEncoding = THREE.sRGBEncoding;
-				//renderer.shadowMap.enabled = true;
-				//renderer.setClearColor(0x0000000,0);
+				renderer.outputEncoding = THREE.sRGBEncoding;
+				renderer.shadowMap.enabled = true;
+				renderer.setClearColor(0x0000000,0);
 				container.appendChild( renderer.domElement );
 
 				RPSbutton =  document.getElementById("RPS1");
