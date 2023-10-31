@@ -674,7 +674,9 @@
 						                metalness: 0.5,
 						        });
 						
-						        //object.material = material;
+						        if ( object.material.opacity == 0 ){
+								object.material = material;
+							}
 						}
 					} );
 					skeleton = new THREE.SkeletonHelper( model );
