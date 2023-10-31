@@ -638,7 +638,7 @@
 				// cloth geometry
 				clothGeometry2 = new THREE.ParametricGeometry( clothFunction, cloth.w, cloth.h );
 
-				object = new THREE.Mesh( clothGeometry2, clothMaterial );
+				object = new THREE.Mesh( clothGeometry2, blackMaterial );
 				object.position.set( 0, 0, 0 );
 				object.castShadow = true;
 				scene.add( object );
